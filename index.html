@@ -14,8 +14,10 @@
    </style>
 </head>
  <script type="text/javascript">
-var D=new Date("2019-02-21");
-document.getElementById("demo").innerHTML=d;
+var D=new Date;
+d.setHours(16);	 
+document.getElementById("87").innerHTML=d;
+	 
 function chkPASWord(){
 with(document.myForm){
 if(pasWord1.value==pasWord2.value){
@@ -84,12 +86,12 @@ function subAdd()
 	<button onclick="myFunction()">what time is it?
 	</button>
 	<p id="demo"></p>
-	<p id="demo2"></p>
+	
 	<h2 id="5">My favourite games </h2>
 	<img=src=" >
 		  <p>the name of this game is <strong>Brawl star</strong>.</p>
 		  <p> Last edittime </P>	  
-		  <p id="demo"></p>
+		<p id="87"></p>
 			      <form name="myForm">
 	
 </body>
