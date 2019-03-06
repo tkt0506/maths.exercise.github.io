@@ -5,12 +5,49 @@
    <style> 
     h1{
     background-color:blue;
-    }
-    #1{
-    font-family:sans-serif;
-    background-color;yellow;	    
-	   }
-	   
+    }	
+header{
+width: 780px;
+height: 110px;
+color: #200f08;
+padding-left: 10px;
+background: #ddd3bf;
+}
+nav{
+left: 0;
+}
+nav ul {
+left: 0;
+}
+nav ul li {
+float: left;
+}
+aside{
+float: right;
+width: 200px;
+min-height: 400px;
+paddding-top: 20px;
+padding-left: 20px;
+margin: 0px;
+border-left: 2px dotted #b2a497;
+border-right: 2px dotted #b2a497;
+}
+section{
+float: left;
+min-height: 400px;
+padding-top: 20px;
+padding-left: 20px;
+margin: 0px;
+border-left: 2px dotted #b2a497;
+}
+footer{
+clear: both;
+width: 780px;
+height: 50px;
+padding: 10px;
+color: #200f08;
+background: #ddd3bf;
+}   
    </style>
 </head>
  <script type="text/javascript">
@@ -31,45 +68,38 @@ function myFunction(){
 	var str="I already tell you that please dont mind it,why you click it??";
 	alert(str.trim());
 }
- 
 
-function subAdd()
-			      {document.myForm.myNumC.value=subAdd()
-			      }
-			      
-var today, someday, text;
-today=new Date();
-someday=new Date();
-someday.setFullYear(2019,12,25);
-if(someday>today){
-	text="today is before 2018Christmas";
-}else{
-	text="today is after 2019Christmas";
-}
-console.log(text);	 
-</script>
 <body>
+<header>
 <h1>My first Blog!!!!</h1>
-<p>Hi!My name is Roxco,i am a boy .</p>
-<p>It is my list,you can click it and go to the website.</p>
-    <ul>
-        <li><a href="https://www.stmarks.edu.hk/sms2/">My Secondary school</a></li>
-      </ul>
-	<p>And this is the list from my blog,you can click it and go there as soon!</p>
+         <nav>		
 	<ul>
-		<li><a href="#2">My favourite cartoon character</a></li>
-		<li><a href="#3">My favourite YT channl</a></li>
-		<li><a href="#4">My favourite subject</a></li>
-		<li><a href="#5">My favourite game</a></li>
-	</ul>	
-    <h2 id="2"><em>My favourite cartoon character.</em></h2> 
+		<li><a href="#2">My favourite</a></li>
+		<li><a href="#3"></a></li>
+		<li><a href="#4"></a></li>
+		<li><a href="#5"></a></li>
+	</ul>
+	 </nav>
+</header>
+<section>
+<article>			
+    <h2 id="2"><em>My favourite </em></h2>
+	    <ol>
+	    <li><a href="#2.1">cartoon</a></li>
+	    <li><a href="#2.2">youtuber</a></li>
+            <li><a href="#2.3">subject</a></li>
+	    <li><a href="#2.4">games</a></li>	    
+	    </ol>
+<h2 id="2.1">My favourite cartoon<h2>	 
     <p>Do you know which cartoon do i love must?<br>
-        It is <strong>Doreamon</strong>.As its funny story ,and good imagenation,i love this very very very much!</p>
+        It is <strong>Doreamon</strong>.As its funny story ,and good imagenation,i love this<strong> very very very much</strong>!</p>
      <img src="https://a.wattpad.com/cover/69478585-352-k55561.jpg" width="203"> 
-    <h2 id="3"><em>My favourite Youtube channel.</em></h2>
+    <h2 id="2.2"><em>My favourite Youtube channel.</em></h2>
 		<p><a href="https://www.youtube.com/channel/UCgL6J6oL8F69vm-GcPScmwg">Hi Cocolate!</a></p>
 <img src="https://yt3.ggpht.com/a-/AAuE7mD5oBJwJrFbmZ14xjN0ObCpD5HfU9DVAXqtFA=s288-mo-c-c0xffffffff-rj-k-no">
-	<h2 id="4">My Favourite Subject</h2>	
+<p>I love this channel very much as it is funny and makes me filled with joy.</p>	    
+	<h2 id="2.3">My Favourite Subject</h2>
+    <p>the table shows that which subject do i love must!(do i need to show more?)</p>
 <table>
     <thead>
 	<tr>
@@ -91,14 +121,17 @@ console.log(text);
 	</tr>
 	</tbody>
 </table>
+  <h2 id="2.4">My favourite games </h2>
+	<img=src=" >
+		  <p>the name of this game is <strong>Brawl star</strong>.<br>
+                      as it is easy for play.Also , there are many friends play!</p>
+    </article>
 <h2>It only a text , please dont mind it.</h2>
 	<button onclick="myFunction()">what time is it?
 	</button>
 	<p id="demo"></p>
 	
-	<h2 id="5">My favourite games </h2>
-	<img=src=" >
-		  <p>the name of this game is <strong>Brawl star</strong>.</p>
+	
 		  <p> Last edittime </P>	  
 		<p id="87"></p>
 			      <form name="myForm">
