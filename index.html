@@ -50,20 +50,10 @@ background: #ddd3bf;
    </style>
 
  <script type="text/javascript">
-funtion start{
-	var str="please enter password.";
-	alert("str")
-}
-funtion pic{
-	var 1=<img src="https://yt3.ggpht.com/a-/AAuE7mD5oBJwJrFbmZ14xjN0ObCpD5HfU9DVAXqtFA=s288-mo-c-c0xffffffff-rj-k-no">
-	
-}
-funtion 1{
-	
-}
-document.document.getElementById("demo").innerHTML =
-Math.floor(Math.random() * 34)+1;
-	</script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}	
+>
 <body>
 <header>
 <h1>My first Blog!!!!</h1>
@@ -124,8 +114,9 @@ Math.floor(Math.random() * 34)+1;
 <h2 id="3">My travelling<h2>
 	<p>Actully, i only has beeen into Singapore and Malasyia.<br>
 	So, i can't tell you anything,sorry.</p>
-	<p id="demo"></p>
-	</article>	
+	<button onclick="document.getElementById('click').innerHTML=getRndInterger(a,b)">get random number</button>
+	<p id="click"></p>
+	 </article>	
     </section>
 	<aside>
 		<h2 id="">other website</h2>
