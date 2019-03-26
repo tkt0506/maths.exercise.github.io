@@ -52,7 +52,10 @@ background: #ddd3bf;
  <script type="text/javascript">
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
-}	
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
+} 
 </script>
 <body>
 <header>
@@ -116,6 +119,7 @@ function getRndInteger(min, max) {
 	So, i will not tell you anything,sorry.</p>
 	<button onclick="document.getElementById('click').innerHTML=getRndInterger(0,34)">get random number</button>
 	<p id="click"></p>
+	<p id="demo"></p>
 	 </article>	
     </section>
 	<aside>
