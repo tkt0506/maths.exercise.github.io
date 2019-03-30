@@ -49,52 +49,7 @@ background: #ddd3bf;
 }   
    </style>
 
- <script type="text/javascript">
-function getRndInteger(min,max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-function myFunction() {
-  document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
-} 
-function myFunc(){
-	var Hours=new Date().getHours();
-	var greeting;
-if (Hours<10){
-	greeting="Good Day!";
-}else if(Hours<14){
-	greeting="good afternoon!";
-}else if(Hours<18){
-	greeting="good evening!";
-}else{
-	greeting="good night!";
-}	
-	document.getElementById("oh").innerHTML = greeting;
-}
-	var day;
-switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
-    break;
-  case 2:
-    day = "Tuesday";
-    break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case  6:
-    day = "Saturday";
-}
-document.getElementById("Day").innerHTML = "Hello！ Today is " + day; 
-</script>
+
 <body>
 <header>
 <h1>My first Blog!!!!</h1>
@@ -180,5 +135,51 @@ document.getElementById("Day").innerHTML = "Hello！ Today is " + day;
 
 	
 </body>
+ <script type="text/javascript">
+function getRndInteger(min,max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
+} 
+function myFunc(){
+	var Hours=new Date().getHours();
+	var greeting;
+if (Hours<10){
+	greeting="Good Day!";
+}else if(Hours<14){
+	greeting="good afternoon!";
+}else if(Hours<18){
+	greeting="good evening!";
+}else{
+	greeting="good night!";
+}	
+	document.getElementById("oh").innerHTML = greeting;
+}
+	var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("Day").innerHTML = "Hello！ Today is " + day; 
+</script>
 </html>
 
