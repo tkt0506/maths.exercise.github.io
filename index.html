@@ -124,6 +124,7 @@ background: #ddd3bf;
 	<input id="good" type="text"></br>
 	<input id="bad" type="text">
 	<button type="button" onclick="Function()">Test Input</button>
+	<p id="po1"></p>
 	 </article>	
     </section>
 	<aside>
@@ -197,17 +198,23 @@ switch (new Date().getDay()) {
     text = "oh,looking forward to the Weekend";
 }document.getElementById("hi").innerHTML = text;
 function tion(){
- var y,x
+ var y,x,message
  x = document.getElementById("Good").value;
- y = document.getElementById("Bad").value;
-try{	
-if(x==" ") alert("min number is empty");
-if(y==" ") alert("max number is empty");
-if(isNaN(x)) alert("min number is not correct");
-if(isNaN(y)) alert("max number is not correct");
-if(x>y){alert("why max number is smaller than min number?")};
-}	
-  return Math.floor(Math.random() * (x - y)) + x;
+ y = document.getElementById("Bad").value;	
+if(x==" ") {
+	alert("min number is empty");
+}else if(y==" ") {
+	alert("max number is empty");
+}else if(isNaN(x)){
+	alert("min number is not correct");
+}else if(isNaN(y)) {
+	alert("max number is not correct");
+}else if(x>y){
+	alert("why max number is smaller than min number?");
+}else{
+  message= return Math.floor(Math.random() * (x - y)) + x;
+documnet.ElementById("po1")=message	
+}
 }	
 	      
 	 
