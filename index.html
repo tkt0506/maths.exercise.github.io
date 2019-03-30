@@ -56,15 +56,20 @@ function getRndInteger(min,max) {
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
 } 
-if (new.Date().getHours()<10){
-	document.getElementById("hi").innerHTML="Good Day!";
-}else if(new.Date().getHours()<14{
-	document.getElementById("hi").innerHTML="good afternoon!";
-}else if(new.Date().getHours()<18{
-	document.getElementById("hi").innerHTML="good evening!";
+function myFunction(){
+	var Hours=new Date().getHours();
+	var greeting;
+if (Hours<10){
+	greeting="Good Day!";
+}else if(Hours<14){
+	greeting="good afternoon!";
+}else if(Hours<18){
+	greeting="good evening!";
 }else{
-	documnet.getElementById("hi").innerHTML="good night!";
-}				
+	greeting="good night!";
+}	
+	document.getElementById("hi").innerHTML = greeting;
+}
 </script>
 <body>
 <header>
