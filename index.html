@@ -56,6 +56,15 @@ function getRndInteger(min,max) {
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
 } 
+if (new.Date().getHours()<10){
+	document.getElementById("hi").innerHTML="Good Day!";
+}else if(new.Date().getHours()<14{
+	document.getElementById("hi").innerHTML="good afternoon!";
+}else if(new.Date().getHours()<18{
+	document.getElementById("hi").innerHTML="good evening!";
+}else{
+	documnet.getElementById('hi").innerHTML="good night!";
+}				
 </script>
 <body>
 <header>
@@ -69,7 +78,8 @@ function myFunction() {
 	 </nav>
 </header>
 <section>
-<article>		
+<article>
+	<p id="hi"></p>
     <h2 id="2"><em>My favourite </em></h2>
 	    <ol>
 	    <li><a href="#2.1">cartoon</a></li>
