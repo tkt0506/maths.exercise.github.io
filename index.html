@@ -64,6 +64,7 @@ background: #ddd3bf;
 <section>
 <article>
 	<p id="Day"></p>
+	<p id="hi"><em></em></p>
     <h2 id="2"><em>My favourite </em></h2>
 	    <ol>
 	    <li><a href="#2.1">cartoon</a></li>
@@ -180,6 +181,19 @@ switch (new Date().getDay()) {
     day = "Saturday";
 }
 document.getElementById("Day").innerHTML = "Hello！ Today is " + day; 
+	 var text;
+switch (new Date().getDay()) {
+  case 4:
+  case 5:
+    text = "Soon it is Weekend";
+    break;
+  case 0:
+  case 6:
+    text = "It is Weekend";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}document.getElementById("hi").innerHTML = text;
 </script>
 </html>
 
