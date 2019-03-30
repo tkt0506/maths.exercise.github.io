@@ -122,7 +122,8 @@ background: #ddd3bf;
 	<p id="oh"></p>
 	<p>please give me the min number at first place and the max number</p>
 	<input id="good" type="text"></br>
-	<input id="bad" type="text">		       
+	<input id="bad" type="text">
+	<button type="button" onclick="Function()">Test Input</button>
 	 </article>	
     </section>
 	<aside>
@@ -140,9 +141,7 @@ background: #ddd3bf;
 	
 </body>
  <script type="text/javascript">
-function getRndInteger(min,max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
+
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
 } 
@@ -197,6 +196,25 @@ switch (new Date().getDay()) {
   default:
     text = "oh,looking forward to the Weekend";
 }document.getElementById("hi").innerHTML = text;
+function tion(){
+ var y,x
+ x = document.getElementById("Good").value;
+ y = document.getElementById("Bad").value;
+if(x==" "){
+	alert("min number is empty")
+}else if(y==" "){
+	alert("max number is empty"}
+}else if(isNaN(x){
+	alert("min number is not correct")
+}else if(isNaN(y){
+	 alert("max number is not correct")
+}else if(x>y){
+	alert("why max number is smaller than min number?)
+}else {
+  return Math.floor(Math.random() * (x - y)) + x;
+}
+}	
+	      
 	 
 </script>
 </html>
