@@ -70,6 +70,30 @@ if (Hours<10){
 }	
 	document.getElementById("oh").innerHTML = greeting;
 }
+	var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("Day").innerHTML = "Hello！ Today is " + day; 
 </script>
 <body>
 <header>
@@ -84,7 +108,7 @@ if (Hours<10){
 </header>
 <section>
 <article>
-	
+	<p id="Day"></p>
     <h2 id="2"><em>My favourite </em></h2>
 	    <ol>
 	    <li><a href="#2.1">cartoon</a></li>
