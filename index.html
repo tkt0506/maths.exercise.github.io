@@ -200,11 +200,13 @@ function tion(){
  var y,x
  x = document.getElementById("Good").value;
  y = document.getElementById("Bad").value;
+try{	
 if(x==" "){alert("min number is empty")};
 if(y==" "){alert("max number is empty")};
 if(isNaN(x){alert("min number is not correct")};
 if(isNaN(y){alert("max number is not correct")};
 if(x>y){alert("why max number is smaller than min number?")};
+}	
   return Math.floor(Math.random() * (x - y)) + x;
 }	
 	      
