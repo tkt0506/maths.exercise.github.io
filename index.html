@@ -123,7 +123,7 @@ background: #ddd3bf;
 	<p>please give me the min number at first place and the max number</p>
 	<input id="good" type="text"></br>
 	<input id="bad" type="text">
-	<button onclick="document.getElementById('po1').innerHTML = getRndInteger(x,y)","tion">get random number</button>
+	<button onclick="tion">get random number</button>
 	<p id="po1"></p>
 	 </article>	
     </section>
@@ -201,8 +201,7 @@ function tion(){
  var y,x,message
  x = document.getElementById("Good").value;
  y = document.getElementById("Bad").value;	
-documnet.ElementById("po1").innerHTML=
-Math.floor(Math.random() * y) + x;
+
 if(x==" ") {
 	alert("min number is empty");
 }else if(y==" ") {
@@ -213,7 +212,10 @@ if(x==" ") {
 	alert("max number is not correct");
 }else if(x>y){
 	alert("why max number is smaller than min number?");
-}
+}else{
+documnet.ElementById("po1").innerHTML=
+Math.floor(Math.random() * y) + x;
+}	
 }	
 </script>
 </html>
