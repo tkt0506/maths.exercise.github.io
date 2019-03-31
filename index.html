@@ -201,6 +201,8 @@ function tion(){
  var y,x,message
  x = document.getElementById("Good").value;
  y = document.getElementById("Bad").value;	
+documnet.ElementById("po1").innerHTML=
+Math.floor(Math.random() * y) + x;
 if(x==" ") {
 	alert("min number is empty");
 }else if(y==" ") {
@@ -211,13 +213,8 @@ if(x==" ") {
 	alert("max number is not correct");
 }else if(x>y){
 	alert("why max number is smaller than min number?");
-}else{
-documnet.ElementById("po1").innerHTML=
-Math.floor(Math.random() * y) + x;
 }
 }	
-	      
-	 
 </script>
 </html>
 
