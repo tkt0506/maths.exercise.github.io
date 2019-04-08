@@ -208,7 +208,8 @@ switch (new Date().getDay()) {
     break;
   default:
     text = "oh,looking forward to the Weekend";
-}document.getElementById("hi").innerHTML = text;
+}
+document.getElementById("hi").innerHTML = text;
 function guess() {
  var y,x;
  x = document.getElementById("good").value;
@@ -231,7 +232,7 @@ Math.floor(Math.random() * y) + x;
 }
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
+}if (x == "") {
     alert("why you leave a blank?");
     return false;
   } 
