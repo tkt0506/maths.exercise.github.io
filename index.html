@@ -132,7 +132,7 @@ color:yelloow;
 	<p>please give me the min number at first place and the max number</p>
 	<input id="good" type="text"></br>
 	<input id="bad" type="text">
-	<button onclick="tion()">get random number</button>
+	<button onclick="guess()">get random number</button>
 	<p id="po1"></p>
 	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
          Name: <input type="text" name="fname">
@@ -209,8 +209,8 @@ switch (new Date().getDay()) {
   default:
     text = "oh,looking forward to the Weekend";
 }document.getElementById("hi").innerHTML = text;
-function tion(){
- var y,x,message;
+function guess() {
+ var y,x;
  x = document.getElementById("good").value;
  y = document.getElementById("bad").value;	
 
