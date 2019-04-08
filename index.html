@@ -132,8 +132,11 @@ color:yelloow;
 	<p>please give me the min number at first place and the max number</p>
 	<input id="good" type="text"></br>
 	<input id="bad" type="text">
-	<button onclick="tion">get random number</button>
+	<button onclick="tion()">get random number</button>
 	<p id="po1"></p>
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+         Name: <input type="text" name="fname">
+         <input type="submit" value="Submit">
 	 </article>	
     </section>
 	<aside>
@@ -225,7 +228,13 @@ if(x==" ") {
 documnet.ElementById("po1").innerHTML=
 Math.floor(Math.random() * y) + x;
 }	
-}	
+}
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("why you leave a blank?");
+    return false;
+  } 
 </script>
 </html>
 
