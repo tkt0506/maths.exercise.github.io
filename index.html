@@ -48,17 +48,15 @@ color: #200f08;
 background: #ddd3bf;
 }   
 ol{
-color: blue;
+color: #200f08;
 }
 h2{
 color: #200f08;
 }
 a{
-color:yelloow;
-	   }	
+color: #200f08;
+}	
    </style>
-
-
 <body>
 <header>
 <h1>My first Blog!!!!</h1>
@@ -72,6 +70,7 @@ color:yelloow;
 </header>
 <section>
 <article>
+	<p id="Date"></p>
 	<p id="Day"></p>
 	<p id="hi"><em></em></p>
     <h2 id="2"><em>My favourite </em></h2>
@@ -87,7 +86,8 @@ color:yelloow;
      <img src="https://a.wattpad.com/cover/69478585-352-k55561.jpg" width="203"> 
     <h2 id="2.2"><em>My favourite Youtube channel.</em></h2>
 		<p><a href="https://www.youtube.com/channel/UCgL6J6oL8F69vm-GcPScmwg">Hi Cocolate!</a></p>
-<img name="picA" src="https://yt3.ggpht.com/a-/AAuE7mD5oBJwJrFbmZ14xjN0ObCpD5HfU9DVAXqtFA=s288-mo-c-c0xffffffff-rj-k-no" onClick="1" onDblClick="2">
+	<p>you can click the photo</p>
+<img name="picA" src="https://yt3.ggpht.com/a-/AAuE7mD5oBJwJrFbmZ14xjN0ObCpD5HfU9DVAXqtFA=s288-mo-c-c0xffffffff-rj-k-no" onClick="bigPic()" onDblClick="smallPic()">
 <p>I love this channel very much as it is funny and makes me filled with joy.</p>	    
 	<h2 id="2.3">My Favourite Subject</h2>
     <p>the table shows that which subject do i love must!(do i need to show more?)</p>
@@ -133,7 +133,7 @@ color:yelloow;
 	<input id="good" type="text"></br>
 	<input id="bad" type="text">
 	<button onclick="guess()">get random number</button>
-	<p id="po1"></p>
+	<p id="pol"></p>
 	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
          Name: <input type="text" name="fname">
          <input type="submit" value="Submit">
@@ -154,7 +154,12 @@ color:yelloow;
 	
 </body>
  <script type="text/javascript">
-
+function bigPic(){
+document.myPicA.src="https://yt3.ggpht.com/a-/AAuE7mD5oBJwJrFbmZ14xjN0ObCpD5HfU9DVAXqtFA=s288-mo-c-c0xffffffff-rj-k-no"
+}	
+function smallPic(){
+document.myPicA.src="data:image/jpeg;base64,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"
+}
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*34);
 } 
@@ -226,16 +231,23 @@ if(x==" ") {
 }else if(x>y){
 	alert("why max number is smaller than min number?");
 }else{
-documnet.ElementById("po1").innerHTML=
-Math.floor(Math.random() * y) + x;
+documnet.ElementById("pol").innerHTML=
+Math.floor(Math.random() *x+y) ;
 }	
 }
-function validateForm() {
-  var x = document.forms["myForm"]["fname"].value;
-}if (x == "") {
-    alert("why you leave a blank?");
-    return false;
-  } 
+myDate=new Date()
+myMon=myDate.getMonth()+1
+myDay=myDate.getDate()
+testDate=myMon+"/"+myDay
+if (testDate=="1/1"){
+alert("happy new year!")
+document.write("today is new year day ")
+}else if(testDate=="4/1")
+alert("April fools day)
+document.write("haha!") 
+}else{
+document write("today is " + testDate +"!")
+}	
 </script>
 </html>
 
