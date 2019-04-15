@@ -79,7 +79,7 @@ color: #200f08;
 </ol>
 	<p id="Date"></p>
 	<p id="Day"></p>
-	<p id="hi"><em></em></p>
+	<p id="hi"></p>
     <h2 id="2"><em>My favourite </em></h2>
 	    <ol>
 	    <li><a href="#2.1">cartoon</a></li>
@@ -144,8 +144,8 @@ color: #200f08;
 	<p>please give me the min number at first place and the max number</p>
 	<input id="good" type="text"/>
 	<input id="bad" type="text"/>
-	<button onclick="guess()">get random number</button>
-	<p id="pol"></p>
+	<button onclick="hay()">get random number</button>
+	<p id="pol">the number</p>
 	 </article>	
     </section>
 	<aside>
@@ -239,7 +239,7 @@ switch (new Date().getDay()) {
     text = "oh,looking forward to the Weekend";
 }
 document.getElementById("hi").innerHTML = text;
-function guess() {
+function hay() {
  var x,y;
  x = document.getElementById("good").value;
  y = document.getElementById("bad").value;	
@@ -258,19 +258,7 @@ documnet.getElementById("pol").innerHTML=
 Math.floor(Math.random() *x+y) ;
 }	
 }
-myDate=new Date()
-myMon=myDate.getMonth()+1
-myDay=myDate.getDate()
-testDate=myMon+"/"+myDay
-if (testDate=="1/1"){
-alert("happy new year!")
-document.write("today is new year day ")
-}else if(testDate=="4/1"){
-alert("April fools day")
-document.write("haha!") 
-}else{
-document write("today is " + testDate )
-}
+
 
 	
 </script>
