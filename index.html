@@ -86,8 +86,8 @@ color: #200f08;
 <form name="myForm">
 <p>if you want to use the table , please login it</p></br>
 <p>id:</p><input type="text" name="ID" size="10"/></br>
-<p>id:</p><input type="text" name="psw" size="10"/></br>
-<button onclick="login()" value="click me"></button>
+<p>psw:</p><input type="text" name="psw" size="10"/></br>
+<input type="button" onclick="login()" value="log in!"/>
 </form>
 <p id="87"></p>
 
@@ -228,8 +228,14 @@ try{
 		document.getElementById("87").innerHTML="change the color that you like"
 	}
 }catch(showError){
-	if(showError=="idError")alert("id is not correct")document.getElementById("t").innerHTML="you have no permission to use it"
-	if(showError=="pswError")alert("psw is not correct")document.getElementById("t").innerHTML="you have no permission to use it"
+	if(showError=="idError"){
+		alert("id is not correct")
+		document.getElementById("t").innerHTML="you have no permission to use it"
+	}			 
+	if(showError=="pswError"){
+		alert("psw is not correct")
+		document.getElementById("t").innerHTML="you have no permission to use it"
+	}	
 }
 }		
 function chg1(){
