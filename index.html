@@ -102,22 +102,22 @@ color: #200f08;
  </thead>
  <tbody>
   <tr>
-     <td><input type="button" onclick="chg1()" value="red"/></td>
+         <td><input type="button" onclick="chg1()" value="red"/></td>
 	 <td><input type="button" onclick="chg11()" value="red"/></td>
 	 <td><input type="button" onclick="chg111()" value="red"/></td>
   </tr>
   <tr>
-     <td><input type="button" onclick="chg3()" value="green"/></td>
+         <td><input type="button" onclick="chg3()" value="green"/></td>
 	 <td><input type="button" onclick="chg33()" value="green"/></td>
 	 <td><input type="button" onclick="chg333()" value="green"/></td>
   </tr>
   <tr>
-     <td><input type="button" onclick="chg2()" value="blue"/></td>
+         <td><input type="button" onclick="chg2()" value="blue"/></td>
 	 <td><input type="button" onclick="chg22()" value="blue"/></td>
 	 <td><input type="button" onclick="chg222()" value="blue"/></td>
   </tr>
   <tr>
-     <td><input type="button" onclick="chg4()" value="origon"/></td>
+         <td><input type="button" onclick="chg4()" value="origon"/></td>
 	 <td><input type="button" onclick="chg44()" value="origon"/></td>
 	 <td><input type="button" onclick="chg444()" value="origon"/></td>
   </tr> 
@@ -190,7 +190,7 @@ color: #200f08;
 	<p>please give me the min number at first place and the max number</p>
 	<input id="good" type="text"/>
 	<input id="bad" type="text"/>
-	<button onclick="hay()">get random number</button>
+	<input type="button" onclick="hay()" value="get random number"/>
 	<p id="pol"></p>
 	 </article>	
     </section>
@@ -361,11 +361,21 @@ documnet.getElementById("pol").innerHTML=
 Math.floor(Math.random()*y+x) ;
 }
 }catch{
-     if(showError=="nox")alert("please enter the min number")
-	 if(showError=="noy")alert("please enter the max number")
-	 if(showError=="xx")alert("min number is not a number")
-	 if(showError=="yx")alert("max number is not a number")
-     if(showError=="x>y")alert("why min number is larger than max number?")		 
+     if(showError=="nox"){
+	     alert("please enter the min number")
+     }
+     if(showError=="noy"){
+	     alert("please enter the max number")
+     }
+     if(showError=="xx"){
+	     alert("min number is not a number")
+     }
+     if(showError=="yx"){
+	     alert("max number is not a number")
+     }
+     if(showError=="x>y"){
+	     alert("why min number is larger than max number?")
+     }		 
 }	
 }
 </script>
