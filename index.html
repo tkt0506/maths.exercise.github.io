@@ -14,13 +14,7 @@ background: #ddd3bf;
 }
 nav{
 left: 0;
-}
-nav ul {
-left: 0;
-position: sticky;
-}
-nav ul li {
-float: left;
+position:fixed;	
 }
 aside{
 float: right;
@@ -87,17 +81,152 @@ color: blue;
 div:hover #10 {
 display: block;
 width:50% ;	
-}	   
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.dropbtn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown2-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown2-content a:hover {background-color: #f1f1f1}
+
+.dropdown2:hover .dropdown2-content {
+  display: block;
+}
+
+.dropdown2:hover .dropbtn2 {
+  background-color: #3e8e41;
+}
+.dropbtn3 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown3-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown3-content a:hover {background-color: #f1f1f1}
+
+.dropdown3:hover .dropdown3-content {
+  display: block;
+}
+
+.dropdown3:hover .dropbtn3 {
+  background-color: #3e8e41;
+}	   	   
    </style>
 <body>
 <header>
 <h1>My first Blog!!!!</h1>
-         <nav>		
-	<ul>
-		<li><a href="#2">favourite</a></li>
-		<li><a href="#3">travell</a></li>
-		
-	</ul>
+         <nav >		
+<div class="dropdown">
+<button class="dropbtn">my favourite</button>
+<div class="dropdown-content">
+        <a href="#2.1">cartoon</a>
+	<a href="#2.2">youtuber</a>
+        <a href="#2.3">subject</a>
+	<a href="#2.4">games</a>
+  </div>
+</div>
+<div class="dropdown2">
+<button class="dropbtn2">my travelling</button>
+<div class="dropdown-content2">
+        <a href="#3.1">HK</a>
+	<a href="#3.2">Malasyia</a>
+        <a href="#3.3">Sangarpore</a>
+  </div>
+</div>
+<div class="dropdown3">
+<button class="dropbtn3">others</button>
+<div class="dropdown-content3">
+        <a href="#4">JS time</a>
+  </div>
+</div>		 
 	 </nav>
 </header>
 <section id="chgarea">
@@ -164,12 +293,6 @@ width:50% ;
 	<p id="Day"></p>
 	<p id="hi"></p>
     <h2 id="2"><em>My favourite </em></h2>
-	    <ol>
-	    <li><a href="#2.1">cartoon</a></li>
-	    <li><a href="#2.2">youtuber</a></li>
-        <li><a href="#2.3">subject</a></li>
-	    <li><a href="#2.4">games</a></li>	    
-	    </ol>
 <h2 id="2.1">My favourite cartoon</h2>	 
     <p>Do you know which cartoon do i love must?<br>
         It is <strong>Doreamon</strong>.As its funny story ,and good imagenation,i love Doreamon<strong> very very very much</strong>!</p>
@@ -214,8 +337,10 @@ width:50% ;
  </article>
 <article>
 <h2 id="3">My travelling</h2>
-	<p>Actully, i only has beeen into Singapore and Malasyia.</br>
-	So, i will not tell you anything,sorry.</p>
+	<p>Actully, i only has beeen into Singapore and Malasyia.</p>
+	<h3 id="3.1">HK</h3>
+	<h3 id="3.2">Malasyia</h3>
+	<h3 id="3.3">Sangrapore</h3>
 	<h2 id="4">JS time</h2>
 	<p>please do not mind it </p>
 	<button onclick="document.getElementById('click').innerHTML=getRndInterger(0,34)">get random number</button>
