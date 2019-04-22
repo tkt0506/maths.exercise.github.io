@@ -13,8 +13,15 @@ padding-left: 10px;
 background: #ddd3bf;
 }
 nav{
-left: 0;
-position:fixed;	
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}	
 }
 aside{
 float: right;
@@ -73,12 +80,12 @@ color: red;
 a:active {
 color: blue;
 }
-#10 {
+.div {
   display: none;
   background-color: yellow;
   padding: 20px;
 }
-div:hover #10 {
+div:hover .div {
 display: block;
 width:50% ;	
 }
@@ -203,7 +210,7 @@ width:50% ;
 <body>
 <header>
 <h1>My first Blog!!!!</h1>
-         <nav >		
+         <nav>		
 <div class="dropdown">
 <button class="dropbtn">my favourite</button>
 <div class="dropdown-content">
@@ -251,10 +258,10 @@ width:50% ;
 <input type="button" onclick="login()" value="log in!"/>
 </form>
 <p id="87"></p>
-<div>can you see the id?
+<div class="div">can you see the id?
 <p>id:TKT</p>	
 </div>	
-<div>can you see the psw?
+<div class="div">can you see the psw?
 <p id="10">psw:tkt0506</p>	
 </div>	
 
