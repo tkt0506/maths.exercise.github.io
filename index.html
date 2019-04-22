@@ -17,6 +17,8 @@ left: 0;
 }
 nav ul {
 left: 0;
+position: -webkit-sticky; 
+position: sticky;
 }
 nav ul li {
 float: left;
@@ -64,11 +66,28 @@ width: 50%;
 button{
   border: 2px solid blue;
   border-radius: 12px;	
-	   }
+}
 input {
 border: 2px solid blue;
  border-radius: 12px;   
-	   }
+}
+a:visited {
+color: green;
+}
+a:hover {
+color: red;
+}
+a:active {
+color: blue;
+}
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+div:hover p {
+  display: block;
+}	   
    </style>
 <body>
 <header>
@@ -103,7 +122,12 @@ border: 2px solid blue;
 <input type="button" onclick="login()" value="log in!"/>
 </form>
 <p id="87"></p>
-
+<div>can you see the id?
+<p>id:TKT</p>	
+</div>	
+<div>can you see the psw?
+<p>psw:tkt0506</p>	
+</div>	
 
 <table id="t">
  <thead>
