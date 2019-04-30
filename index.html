@@ -363,6 +363,8 @@ img{
 	<input id="bad" type="text"/>
 	<input type="button" onclick="hay()" value="get random number"/>
 	<p id="pol"></p>
+	<button onclick="timetime()">Try it</button>
+        <p id="time"></p>
 	 </article>	
     </section>
 	<aside id="chgarea2">
@@ -380,7 +382,11 @@ img{
 	
 </body>
  <script type="text/javascript">
-	
+function timetime() {
+  var d = new Date();
+  d.setDate(15);
+  document.getElementById("time").innerHTML = d;
+}	
 function myweb(){	
 	for(x=0;x<document.myform.myselect.options.length;x++){
 		if(document.myfrom.myselect[x].selected){
