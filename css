@@ -1,0 +1,190 @@
+ <!DOCTYPE html> 
+  <style> 
+  
+header{
+width: 100%;
+height: 110px;
+color: #200f08;
+padding-left: 10px;
+background: #ddd3bf;
+}
+nav{
+  list-style-type: none;
+  margin: 0;	
+  padding-left: 10px;
+  overflow: hidden;
+  background: #ddd3bf;
+  width: 50%;
+  position:fixed;
+	
+}	
+aside{
+float: right;
+width: 27%;
+min-height: 400px;
+paddding-top: 20px;
+padding-left: 20px;
+margin: 0px;
+border-right: 2px dotted #b2a497;
+}
+section{
+float: left;
+width:70%;	
+min-height: 400px;
+padding-top: 20px;
+padding-left: 20px;
+margin: 0px;
+border-left: 2px dotted #b2a497;
+border-right: 2px dotted #b2a497;	
+}
+footer{
+clear: both;
+width: 100%;
+height: 50px;
+padding: 10px;
+color: #200f08;
+background: #ddd3bf;
+}   
+ol{
+color: #200f08;
+}
+h2{
+color: #200f08;
+}
+a{
+color: #200f08;
+}
+table{
+border-collapse: collapse;
+width: 50%;
+}
+button{
+  border: 2px solid blue;
+  border-radius: 12px;	
+}
+input {
+border: 2px solid blue;
+ border-radius: 12px;   
+}
+a:visited {
+color: green;
+}
+a:hover {
+color: red;
+}
+a:active {
+color: blue;
+}
+.word {
+  display: none;
+  background-color: yellow;
+  padding: 20px;	
+}
+div:hover .word {
+display: block;
+width:50% ;	
+}
+.dropbtn3 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown3-content3 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown3-content3 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown3-content3 a:hover {background-color: #f1f1f1}
+.dropdown3:hover .dropdown3-content3 {
+  display: block;
+}
+.dropdown3:hover .dropbtn3 {
+  background-color: #3e8e41;
+}	   
+.dropbtn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown2-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown2-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown2-content2 a:hover {background-color: #f1f1f1}
+.dropdown2:hover .dropdown2-content2 {
+  display: block;
+}
+.dropdown2:hover .dropbtn2 {
+  background-color: #3e8e41;
+}	   
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+img{
+	size:300px
+	   }		
+   </style>
+   </html>
