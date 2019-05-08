@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+	<html>
 <script type="text/javascript">
 function timetime() {
   var d = new Date();
